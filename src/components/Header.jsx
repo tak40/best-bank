@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 function Header() {
     return (
         <header>
-            <h1>Best Bank</h1>
+            <img src="assets/bestbank_logo.png" alt="Best Bank Logo" />
             <NavBar />
         </header>
     )
