@@ -5,8 +5,12 @@ import React from 'react'
 function ButtonSection() {
     return (
         <div className="button-section">
-            <button className="button-section__button">Pay</button>
-            <button className="button-section__button">Transfer</button>
+            <button className="button-section__button button-section__pay">
+                Pay
+            </button>
+            <button className="button-section__button button-section__transfer">
+                Transfer
+            </button>
         </div>
     )
 }
