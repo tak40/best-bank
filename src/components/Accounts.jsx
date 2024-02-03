@@ -1,5 +1,6 @@
 /** @format */
 import React from 'react'
+import { formatCurrency } from '../utils'
 
 function Accounts({ data, onAccountSelect, selectedAccountId}) {
     return (
@@ -9,11 +10,13 @@ function Accounts({ data, onAccountSelect, selectedAccountId}) {
                 {data.map(account => (
                     <article
                         key={account.id}
-                        className="data-item accounts-item"
+                        className={`data-item accounts-item ${
+                            account.id === selectedAccountId ? 'selected' : ''
+                        }`}
                         onClick={() => onAccountSelect(account.id)}
                     >
                         <h3>{account.title}</h3>
-                        <p>${account.balance}</p>
+                        <p>{formatCurrency(account.balance)}</p>
                     </article>
                 ))}
             </div>
