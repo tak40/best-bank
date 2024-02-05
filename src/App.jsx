@@ -5,12 +5,10 @@ import Accounts from './components/Accounts'
 import ButtonSection from './components/ButtonSection'
 import Header from './components/Header'
 import Spendings from './components/Spendings'
-import accounts from './data/AccountsData'
+import accounts from './data/accountsData'
 
 function App() {
-    const [selectedAccountId, setSelectedAccountId] = useState(
-        accounts[0].id
-    )
+    const [selectedAccountId, setSelectedAccountId] = useState(accounts[0].id)
 
     return (
         <div className="app-container">
